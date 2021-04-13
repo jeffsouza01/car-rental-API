@@ -1,0 +1,17 @@
+{
+    "type": "postgres",
+    "port": 5434,
+    "host": "localhost",
+    "username": "ignite",
+    "password": "docker",
+    "database": "car_rental",
+    "migrations": [
+        "./src/database/migrations/*.ts"
+    ],
+    "entities":[
+        "./src/modules/**/entities/*ts"
+    ],
+    "cli": {
+        "migrationsDir": "./database/migrations/migrations"
+    }
+}
