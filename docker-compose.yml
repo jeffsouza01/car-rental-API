@@ -10,14 +10,14 @@ services:
         environment:
             - POSTGRES_USER=ignite
             - POSTGRES_PASSWORD=docker
-            - POSTGRES_DB=car_rental
+            - POSTGRES_DB=rental_club
         volumes:
             - pgdata:/data/postgres
        
 
     app:
         build: .
-        container_name: carrental
+        container_name: rental_club
         restart: always
         ports:
             - 3333:3333
