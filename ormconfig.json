@@ -4,14 +4,14 @@
     "host": "localhost",
     "username": "ignite",
     "password": "docker",
-    "database": "car_rental",
+    "database": "rental_club",
     "migrations": [
         "./src/database/migrations/*.ts"
     ],
     "entities":[
-        "./src/modules/**/entities/*ts"
+        "./src/modules/**/entities/*.ts"
     ],
     "cli": {
-        "migrationsDir": "./database/migrations/migrations"
+        "migrationsDir": "./src/database/migrations"
     }
 }
