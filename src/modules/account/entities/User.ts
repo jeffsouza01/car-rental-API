@@ -10,7 +10,7 @@ class User {
   name: string;
 
   @Column()
-  username: string;
+  avatar: string;
 
   @Column()
   password: string;
