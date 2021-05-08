@@ -5,7 +5,8 @@ import cors from "cors";
 import express, { NextFunction, Response, Request } from "express";
 import swaggerUI from "swagger-ui-express";
 
-import { AppError } from "./errors/AppError";
+import { AppError } from "@errors/AppError";
+
 import { router } from "./routes";
 import swaggerFile from "./swagger.json";
 
