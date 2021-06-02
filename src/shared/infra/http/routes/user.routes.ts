@@ -4,7 +4,7 @@ import multer from "multer";
 import uploadConfig from "@config/upload";
 import { CreateUserController } from "@modules/account/UseCases/createUser/CreateUserController";
 import { UpdateUserAvatarController } from "@modules/account/UseCases/updateUserAvatar/UpdateUserAvatarController";
-import { ensureAuthenticate } from "@shared/infra/http/middlewares/ensureAuthenticate";
+import { ensureAuthenticated } from "@shared/infra/http/middlewares/ensureAuthenticated";
 
 const createUserController = new CreateUserController();
 const updateUserAvatarController = new UpdateUserAvatarController();
@@ -17,7 +17,7 @@ userRoutes.post("/", createUserController.handle);
 
 userRoutes.patch(
   "/avatar",
-  ensureAuthenticate,
+  ensureAuthenticated,
   uploadAvatar.single("avatar"),
   updateUserAvatarController.handle
 );
