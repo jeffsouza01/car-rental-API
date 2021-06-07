@@ -13,7 +13,7 @@ O usuário responsável pelo cadastro deve ser um usuário administrador.
 **Regra Funcional**
 Deve ser possível listar todos os carros disponíveis.
 Deve ser possível listar todos os carros disponíveis pelo nome da categoria.
-Deve ser possível listar todos os carros disponíveis pelo nome da narca.
+Deve ser possível listar todos os carros disponíveis pelo nome da marca.
 Deve ser possível listar todos os carros disponíveis pelo nome do carro.
 
 **Regra de Negócio**
@@ -23,8 +23,6 @@ O usuário não precisa estar logado no sistema
 
 **Regra Funcional**
 Deve ser possível cadastrar a especificação de um veículo
-Deve ser possível listar todas as especificações
-Deve ser possível listar todos os carros
 
 **Regra de Negócio**
 Não deve ser possível cadastrar a especificação de um carro não cadastrado.
@@ -35,7 +33,6 @@ O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 **Regra Funcional**
 Deve ser possível cadastrar a imagem do carro
-Deve ser possível listar todos os carros
 
 **Regra não funcional**
 Utilizar o multer para upload dos arquivos
