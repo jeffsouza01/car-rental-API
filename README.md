@@ -1,3 +1,7 @@
+<h2 align="center"> Rental Club</h2>
+
+<p align="center"> Aplicação para reserva de carros </p>
+
 # Cadastro de Carro
 
 **Regra Funcional**
@@ -50,3 +54,7 @@ Deve ser possível cadastrar um aluguel.
 O aluguel deve ter duração mínima de 24 horas
 Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
 Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro.
+
+<h3 align="center"> :construction: Em Desenvolvimento :construction: </h3>
+
+**Made by Jefferson da Silva** :v:
