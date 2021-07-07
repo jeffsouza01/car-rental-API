@@ -14,7 +14,7 @@ async function create() {
     values ('${id}', 'admin', 'admin@rentalculb.com', '${password}', 'jamok123omasd', 'true', 'now()' )`
   );
 
-  connection.close;
+  await connection.close;
 }
 
 create().then(() => console.log("User Admin Created"));
