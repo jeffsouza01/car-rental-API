@@ -2,8 +2,12 @@ import { container } from "tsyringe";
 
 import "@shared/container/providers";
 
+import { ConnectionIsNotSetError } from "typeorm";
+
 import { UsersRepository } from "@modules/account/infra/typeorm/repositories/UsersRepository";
+import { UsersTokensRepository } from "@modules/account/infra/typeorm/repositories/UsersTokensRepository";
 import { IUsersRepository } from "@modules/account/repositories/IUsersRepository";
+import { IUsersTokensRepository } from "@modules/account/repositories/IUsersTokensRepository";
 import { CarsImagesRepository } from "@modules/cars/infra/typeorm/repositories/CarsImagesRepository";
 import { CarsRepository } from "@modules/cars/infra/typeorm/repositories/CarsRepository";
 import { CategoriesRepository } from "@modules/cars/infra/typeorm/repositories/CategoriesRepository";
@@ -28,6 +32,11 @@ container.registerSingleton<ISpecificationsRepository>(
 container.registerSingleton<IUsersRepository>(
   "UsersRepository",
   UsersRepository
+);
+
+container.registerSingleton<IUsersTokensRepository>(
+  "UsersTokensRepository",
+  UsersTokensRepository
 );
 
 container.registerSingleton<ICarsRepository>("CarsRepository", CarsRepository);
