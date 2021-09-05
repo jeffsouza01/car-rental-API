@@ -78,6 +78,17 @@ Deve ser possível realizar a busca de todos os alugueis para o usuário.
 **Regra de Negócio**
 O usuário deve estar logado.
 
+# Recuperação de Senha
+
+**Regra Funcional**
+Deve ser possível o usuário recuperar a senha informando o e-mail.
+O usuário deve receber um e-mail com o passo a passo para a recuperação da senha.
+O usuário deve conseguir criar uma nova senha.
+
+**Regra de Negócio**
+O usuário precisa informar uma nova senha.
+O link enviado para a recuperação da senha deve expirar em 3 horas.
+
 <h3 align="center"> :construction: Em Desenvolvimento :construction: </h3>
 
 **Made by Jefferson da Silva** :v:
